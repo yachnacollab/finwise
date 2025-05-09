@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinWise</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo lottie-logo">
+            FinWise
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#mission">Mission</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#authors">Contact us</a></li>
+        </ul>
+        <div class="nav-actions">
+           
+            <a href="#fin_calc" class="signup-btn">Financial Calculator
+            </a>
+            <a href="planilha.xlsx" class="signup-btn">Insights</a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main>
+        <section id="fin_calc" class="modal2">
+            <a href="#fechar" title="Fechar" class="fechar">x</a>
+            <form class="financial-calc-form">
+                <h2>Personal Expenses per Month</h2>
+                <h4>Income</h4>
+                <div class="row">
+                    <label for="renda">Net Income</label>
+                    <input type="number" name="renda" id="renda">
+                </div>
+                <h4>Expenses</h4>
+                <h6 style="color:white;font-family:Arial, Helvetica, sans-serif;position: relative;left: 38%;top: -15px;">
+                    <i>Enter 0 if there is no expense</i></h6>
+                <div class="row">
+                    <label for="agua">Water Bill</label>
+                    <input type="number" name="agua" id="agua" onblur="calculate()">
+                </div>    <div class="row">
+                        <label for="luz">Electricity Bill</label>
+                    <input type="number" name="luz" id="luz" onblur="calculate()">
+                 </div>   <div class="row">
+                        <label for="aluguel">Rent</label>
+                    <input type="number" name="aluguel" id="aluguel" onblur="calculate()">
+                </div>
+                <div class="row">
+                    <label for="financiamento">Financing / Loan Payment</label>
+                    <input type="number" name="financiamento" id="financiamento" onblur="calculate()">
+               </div>
+                    <div class="row">
+                  
+                    <label for="internet">Internet</label>
+                    <input type="number" name="internet" id="internet" onblur="calculate()">
+                  </div>  <div class="row">
+                
+                    <label for="celular">Mobile Phone</label>
+                    <input type="number" name="celular" id="celular" onblur="calculate()">
+                </div>
+                <div class="row">
+                    <label for="alimentacao">Food</label>
+                    <input type="number" name="alimentacao" id="alimentacao" onblur="calculate()">
+                </div>
+                    <div class="row">
+                    
+                    <label for="transporte">Transportation</label>
+                    <input type="number" name="transporte" id="transporte" onblur="calculate()">
+                   </div>
+                    <div class="row">
+
+                    <label for="cartao">Credit Card</label>
+                    <input type="number" name="cartao" id="cartao" onblur="calculate()">
+                </div>
+                <div class="row">
+                    <label for="lazer">Leisure / Beauty</label>
+                    <input type="number" name="lazer" id="lazer" onblur="calculate()">
+                </div>
+                    <div class="row">
+                  
+                    <label for="saude">Health</label>
+                    <input type="number" name="saude" id="saude" onblur="calculate()">
+                  </div>
+                <div class="row">
+
+                    <label for="outros">Others</label>
+                    <input type="number" name="outros" id="outros" onblur="calculate()">
+                </div>
+                <h4>Situation / Financial Status</h4>
+                <div class="row">
+                    <label for="total">Total</label>
+                    <input type="number" name="total" id="total">
+                </div>
+            </form>
+        </section>
+     
+        <section id="home" class="section active home-hero">
+            <div class="home-content">
+                <h1 class="hero-title">All you need to know about the money !!!</h1>
+                <p class="hero-subheadline">Empowering you with smart, simple and actionable financial knowledge</p>
+                <a href="#" class="cta-btn">Get started - it's free</a>
+            </div>
+            <div class="home-image">
+
+                <lottie-player src="https://lottie.host/06592832-a2f5-4c10-9516-4776ce3c5d46/Z07lTzCkIQ.json"  background="transparent"  speed="1"  style="width: 320px; height: 320px;"  loop  autoplay></lottie-player>
+            </div>
+        </section>
+
+        <section id="mission" class="active section home-hero">
+            <div class="home-content">
+                <h1 class="hero-title">Our Mission</h1>
+                <p class="hero-subheadline">We are dedicated to making financial education accessible to everyone, with a special focus on low-income communities. Our goal is to deliver high-quality, easy-to-understand content and practical resources that empower people to take control of their financial futures.</p>
+            <p class="hero-subheadline">We believe in simplicity, clarity, and ensuring that financial knowledge is within reach for all.</p>
+      
+    
+            </div>
+            <div class="home-image">
+
+                <lottie-player src="https://lottie.host/7eb7cd29-ebaf-4d87-98c3-e1ad4ef36344/MK67OOvU3c.json"  background="transparent"  speed="1"  style="width: 320px; height: 320px;"  loop  autoplay></lottie-player>
+            </div>
+          
+        
+        </section>
+        
+        
+        <section id="education" class="active section home-hero">
+                <div class="home-content">
+                    <h1 class="hero-title">Financial Education</h1>
+                    <p class="hero-subheadline">Our goal is to provide high quality content on financial education in a simple and engaging way , understanding that many of our users don't have much free time to study the topic. With that in mind, we've carefully selected the best resources available online so that you,
+                        our valued user, can reach your financial goals and, most importantly, stay in the green..</p>
+              
+                </div>
+                <div class="home-image">
+    
+                    <lottie-player src="https://lottie.host/3f2a3231-f2f0-488e-b499-271cd5cff5d5/j8KmeKY7fq.json"  background="transparent"  speed="1"  style="width: 320px; height: 320px;"  loop  autoplay></lottie-player>
+                </div>
+               
+              </section>
+
+
+              <section id="journey" class="active section">
+                
+                   
+                    <p class="hero-subtitle">9 steps
+                        to make your financial life healthier!!!</p>
+              
+               
+              
+                <div class="journey-grid">
+                    <div class="journey-card"><img src="images/card1.png" style="width: 100%; height: 100%;"></div>
+                    <div class="journey-card"><img src="images/card2.png" style="width: 100%; height: 100%;"></div>
+                    <div class="journey-card"><img src="images/card3.png" style="width: 100%; height: 100%;"></div>
+                    <div class="journey-card"><img src="images/card4.png" style="width: 100%; height: 100%;"></div>
+                    <div class="journey-card"><img src="images/card5.png" style="width: 100%; height: 100%;"></div>
+                    <div class="journey-card"><img src="images/card6.png" style="width: 100%; height: 100%;"></div>
+                    <div class="journey-card"><img src="images/card7.png" style="width: 100%; height: 100%;"></div>
+                    <div class="journey-card"><img src="images/card8.png" style="width: 100%; height: 100%;"></div>
+                    <div class="journey-card"><img src="images/card9.png" style="width: 100%; height: 100%;"></div>
+                  
+                </div>
+
+            
+              </section>
+
+           
+             
+             
+             
+              
+                
+                   
+               
+          
+           
+                    <div class="carousel">
+                        <div class="carousel-inner">
+                            <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true"
+                                hidden="" checked="checked">
+                            <div class="carousel-item">
+                                <iframe width="100%" height="500" src="https://www.youtube.com/embed/-UjN7aOPq1A"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true"
+                                hidden="">
+                            <div class="carousel-item">
+                                <iframe width="100%" height="500" src="https://www.youtube.com/embed/1DRq8N7SpYc"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true"
+                                hidden="">
+                            <div class="carousel-item">
+                                <iframe width="100%" height="500" src="https://www.youtube.com/embed/HOOdOdDNEYE"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <input class="carousel-open" type="radio" id="carousel-4" name="carousel" aria-hidden="true"
+                                hidden="">
+                            <div class="carousel-item">
+                                <iframe width="100%" height="500" src="https://www.youtube.com/embed/zpBrpz5XdCg"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <input class="carousel-open" type="radio" id="carousel-5" name="carousel" aria-hidden="true"
+                                hidden="">
+                            <div class="carousel-item">
+                                <iframe width="100%" height="500" src="https://www.youtube.com/embed/4XZIv4__sQA"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <label for="carousel-5" class="carousel-control prev control-1">‹</label>
+                            <label for="carousel-2" class="carousel-control next control-1">›</label>
+                            <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+                            <label for="carousel-3" class="carousel-control next control-2">›</label>
+                            <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+                            <label for="carousel-4" class="carousel-control next control-3">›</label>
+                            <label for="carousel-3" class="carousel-control prev control-4">‹</label>
+                            <label for="carousel-5" class="carousel-control next control-4">›</label>
+                            <label for="carousel-4" class="carousel-control prev control-5">‹</label>
+                            <label for="carousel-1" class="carousel-control next control-5">›</label>
+                            <ol class="carousel-indicators">
+                                <li>
+                                    <label for="carousel-1" class="carousel-bullet">•</label>
+                                </li>
+                                <li>
+                                    <label for="carousel-2" class="carousel-bullet">•</label>
+                                </li>
+                                <li>
+                                    <label for="carousel-3" class="carousel-bullet">•</label>
+                                </li>
+                                <li>
+                                    <label for="carousel-4" class="carousel-bullet">•</label>
+                                </li>
+                                <li>
+                                    <label for="carousel-5" class="carousel-bullet">•</label>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <section id="authors" class="section active home-hero">
+                        <h1 class="hero-title">Meet the Developers</h1>
+                        <div class="authors-grid">
+                            <div class="author-card">
+                                <img src="images/author1.jpeg" alt="Author 1" class="author-img">
+                                <div class="author-name">Yachna Sharma</div>
+                                <a href="https://www.linkedin.com/in/yachna-sharma-337645314/" class="author-linkedin" target="_blank" rel="noopener">
+                                    <svg width="24" height="24" viewBox="0 0 32 32" fill="none">
+                                        <rect width="32" height="32" rx="6" fill="#0077B5"/>
+                                        <path d="M10.666 13.333h2.667v8H10.666v-8zm1.333-4a1.333 1.333 0 110 2.667 1.333 1.333 0 010-2.667zm4 4h2.56v1.093h.037c.356-.675 1.226-1.387 2.523-1.387 2.7 0 3.2 1.773 3.2 4.08v4.214h-2.667v-3.733c0-.89-.016-2.04-1.24-2.04-1.24 0-1.427.968-1.427 1.97v3.803h-2.667v-8z" fill="#fff"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="author-card">
+                                <img src="images/author2.jpeg" alt="Author 2" class="author-img">
+                                <div class="author-name">Aryan Bhatt</div>
+                                <a href="https://www.linkedin.com/in/bhattaryan007/" class="author-linkedin" target="_blank" rel="noopener">
+                                    <svg width="24" height="24" viewBox="0 0 32 32" fill="none">
+                                        <rect width="32" height="32" rx="6" fill="#0077B5"/>
+                                        <path d="M10.666 13.333h2.667v8H10.666v-8zm1.333-4a1.333 1.333 0 110 2.667 1.333 1.333 0 010-2.667zm4 4h2.56v1.093h.037c.356-.675 1.226-1.387 2.523-1.387 2.7 0 3.2 1.773 3.2 4.08v4.214h-2.667v-3.733c0-.89-.016-2.04-1.24-2.04-1.24 0-1.427.968-1.427 1.97v3.803h-2.667v-8z" fill="#fff"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="author-card">
+                                <img src="images/author3.jpg" alt="Author 3" class="author-img">
+                                <div class="author-name">Daksh</div>
+                                <a href="https://www.linkedin.com/in/daksh-dahuja-889374253/" class="author-linkedin" target="_blank" rel="noopener">
+                                    <svg width="24" height="24" viewBox="0 0 32 32" fill="none">
+                                        <rect width="32" height="32" rx="6" fill="#0077B5"/>
+                                        <path d="M10.666 13.333h2.667v8H10.666v-8zm1.333-4a1.333 1.333 0 110 2.667 1.333 1.333 0 010-2.667zm4 4h2.56v1.093h.037c.356-.675 1.226-1.387 2.523-1.387 2.7 0 3.2 1.773 3.2 4.08v4.214h-2.667v-3.733c0-.89-.016-2.04-1.24-2.04-1.24 0-1.427.968-1.427 1.97v3.803h-2.667v-8z" fill="#fff"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+         
+    </main>
+
+    <footer class="bottombar">
+      
+        © 2025 FinWise. All rights reserved.
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- LottieFiles Player -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</body>
+</html> 
